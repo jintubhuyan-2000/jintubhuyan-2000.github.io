@@ -696,7 +696,7 @@ background-color: linear-gradient(to bottom, #0099ff -6%, #ffffff 100%);
 
                     <div class="form-group">
                         <div class="input-group text-center col-xs-12 col-md-12  col-sm-12 col-lg-12">
-                            <button type="button" class="btn btn-primary" onclick="return getdata()">SUBMIT</button>
+                            <button type="button" class="btn btn-primary" onclick= "GeneratePdf();" value="GeneratePdf" >SUBMIT</button>
                         </div>
                     </div>
 </div>
@@ -913,6 +913,44 @@ if(pin.value.charAt(0)!='5')
     pin.focus();
     }
 } 
+
+
+
+
+
+
+
+
+
+
+
+src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity=
+"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+        crossorigin="anonymous">
+
+
+function GeneratePdf() {
+            var element = document.getElementById('form-print');
+            html2pdf(element);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  function chkState(obj){
