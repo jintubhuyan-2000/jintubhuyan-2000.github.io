@@ -798,77 +798,170 @@
 
 
 
-
-
-
-
-
-
-
-                <script type="text/JavaScript">
-
-
-                    var doc = new jsPDF();
-                            var specialElementHandlers = {
-                                '#editor': function(element, renderer) {
-                                    return true;
-                                }
-                            };
-                    
-                            $('#generatePDF').click(function() {
-                                var name = $('#firstNameLabel').val();
-                                var sonof = $('#fatherNameLabel').val();
-                                var Date = $('#dobLabel').val();
-                                var MOBILE = $('#mobileLabel').val();
-                                var EMAIL = $('#emailLabe').val();
-                                var AADHAR = $('#aadhaarNoLabel').val();
-                                var AREA = $('#areaLabel').val();
-                                var AMOUNT = $('#EstimatedAmountLabel').val();
-                    
-                                var content = '<h1>TDR CERTIFICATE</h1>' +
-                                              '<p>Name: ' + name + '</p>' +
-                                              '<p>S/O,W/O,D/O: ' + sonof + '</p>' +
-                                              '<p>D.O.B.: ' + date + '</p>';+
-                                              '<p>Mobile Number.: ' + MOBILE + '</p>';+
-                                              '<p>Email ID.: ' + EMAIL + '</p>';+
-                                              '<p>Aadhar ID.: ' + AADHAR + '</p>';+
-                                              '<p>Area.: ' + AREA + '</p>';+
-                                              '<p>Estimated Amount.: ' + AMOUNT + '</p>';+
-                                              '<p>'Official representative will come to your home within 15 days for verification. <br>After submiting you are not allowed to edit. '</p>';
-                    
-                    
-                    
-                    
-                    
-                                doc.fromHTML(content, 7, 7, {
-                                    'width': 300,
-                                    'elementHandlers': specialElementHandlers
-                                });
-                                doc.save('TDR.pdf');
-                            });
-                    
-                    
-                    
-                        //var doc = new jsPDF(); 
-                       // var specialElementHandlers = { '#editor': function(element, renderer) { return true; } }; 
-                        //$('#generatePDF').click(function() { doc.fromHTML($('#htmlContent').html(), 7, 7, { 'width': 300, 'elementHandlers': specialElementHandlers}); doc.save('TDR.pdf'); });
-                    
-                    
-                    
-                    </script>
-
-
-
-
-
-
-
-
-
-
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/JavaScript">
+
+
+            var doc = new jsPDF();
+                    var specialElementHandlers = {
+                        '#editor': function(element, renderer) {
+                            return true;
+                        }
+                    };
+            
+                    $('#generatePDF').click(function() {
+                        var name = $('#firstNameLabel').val();
+                        var sonof = $('#fatherNameLabel').val();
+                        var Date = $('#dobLabel').val();
+                        var MOBILE = $('#mobileLabel').val();
+                        var EMAIL = $('#emailLabe').val();
+                        var AADHAR = $('#aadhaarNoLabel').val();
+                        var AREA = $('#areaLabel').val();
+                        var AMOUNT = $('#EstimatedAmountLabel').val();
+            
+                        var content = '<h1>TDR CERTIFICATE</h1>' +
+                                      '<p>Name: ' + name + '</p>' +
+                                      '<p>S/O,W/O,D/O: ' + sonof + '</p>' +
+                                      '<p>D.O.B.: ' + date + '</p>';+
+                                      '<p>Mobile Number.: ' + MOBILE + '</p>';+
+                                      '<p>Email ID.: ' + EMAIL + '</p>';+
+                                      '<p>Aadhar ID.: ' + AADHAR + '</p>';+
+                                      '<p>Area.: ' + AREA + '</p>';+
+                                      '<p>Estimated Amount.: ' + AMOUNT + '</p>';+
+                                      '<p>'Official representative will come to your home within 15 days for verification. <br>After submiting you are not allowed to edit. '</p>';
+            
+            
+            
+            
+            
+                        doc.fromHTML(content, 7, 7, {
+                            'width': 300,
+                            'elementHandlers': specialElementHandlers
+                        });
+                        doc.save('TDR.pdf');
+                    });
+            
+            
+            
+                //var doc = new jsPDF(); 
+               // var specialElementHandlers = { '#editor': function(element, renderer) { return true; } }; 
+                //$('#generatePDF').click(function() { doc.fromHTML($('#htmlContent').html(), 7, 7, { 'width': 300, 'elementHandlers': specialElementHandlers}); doc.save('TDR.pdf'); });
+            
+            
+            
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </form>
     </div>
+
+
+
+
+
+
+
+<!--
+
+
+    <script type="text/JavaScript">
+
+
+        var doc = new jsPDF();
+                var specialElementHandlers = {
+                    '#editor': function(element, renderer) {
+                        return true;
+                    }
+                };
+        
+                $('#generatePDF').click(function() {
+                    var name = $('#firstNameLabel').val();
+                    var sonof = $('#fatherNameLabel').val();
+                    var Date = $('#dobLabel').val();
+                    var MOBILE = $('#mobileLabel').val();
+                    var EMAIL = $('#emailLabe').val();
+                    var AADHAR = $('#aadhaarNoLabel').val();
+                    var AREA = $('#areaLabel').val();
+                    var AMOUNT = $('#EstimatedAmountLabel').val();
+        
+                    var content = '<h1>TDR CERTIFICATE</h1>' +
+                                  '<p>Name: ' + name + '</p>' +
+                                  '<p>S/O,W/O,D/O: ' + sonof + '</p>' +
+                                  '<p>D.O.B.: ' + date + '</p>';+
+                                  '<p>Mobile Number.: ' + MOBILE + '</p>';+
+                                  '<p>Email ID.: ' + EMAIL + '</p>';+
+                                  '<p>Aadhar ID.: ' + AADHAR + '</p>';+
+                                  '<p>Area.: ' + AREA + '</p>';+
+                                  '<p>Estimated Amount.: ' + AMOUNT + '</p>';+
+                                  '<p>'Official representative will come to your home within 15 days for verification. <br>After submiting you are not allowed to edit. '</p>';
+        
+        
+        
+        
+        
+                    doc.fromHTML(content, 7, 7, {
+                        'width': 300,
+                        'elementHandlers': specialElementHandlers
+                    });
+                    doc.save('TDR.pdf');
+                });
+        
+        
+        
+            //var doc = new jsPDF(); 
+           // var specialElementHandlers = { '#editor': function(element, renderer) { return true; } }; 
+            //$('#generatePDF').click(function() { doc.fromHTML($('#htmlContent').html(), 7, 7, { 'width': 300, 'elementHandlers': specialElementHandlers}); doc.save('TDR.pdf'); });
+        
+        
+        
+        </script>
+
+
+
+
+    -->
+
+
+
+
+
+
+
+
+
+
     </div>
     <div class="container pd0">
         <div class="col-xs-12 col-md-12  col-sm-12 col-lg-12" align="right" style="background-color: #2856b2fa">
@@ -1097,7 +1190,7 @@
 </html>
 
 
-
+<!-- 
 <script type="text/JavaScript">
 
 
@@ -1148,4 +1241,4 @@ var doc = new jsPDF();
 
 
 
-</script>
+</script>  -->
