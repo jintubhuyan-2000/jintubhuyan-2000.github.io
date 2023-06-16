@@ -1068,33 +1068,9 @@
 <script type="text/JavaScript">
 
 
-var doc = new jsPDF();
+    var doc = new jsPDF(); var doc = new jsPDF(); var specialElementHandlers = { '#editor': function(element, renderer) { return true; } }; $('#generatePDF').click(function() { doc.fromHTML($('#htmlContent').html(), 7, 7, { 'width': 300, 'elementHandlers':
+    specialElementHandlers}); doc.save('TDR.pdf'); });
 
-        var specialElementHandlers = {
-            '#editor': function(element, renderer) {
-                return true;
-            }
-        };
-
-        $('#generatePDF').click(function() {
-            var name = $('#name').val();
-            var email = $('#email').val();
-            var message = $('#message').val();
-            var TDR_area = $('#TDR_AREA').val();
-            
-
-            var content = '<h1>Hello, World!</h1>' +
-                          '<p>Name: ' + name + '</p>' +
-                          '<p>Email: ' + email + '</p>' +
-                          '<p>Message: ' + message + '</p>'
-                          '<p>TDR_AREA: ' + TDR_AREA + '</p>';;
-
-            doc.fromHTML(content, 8, 8, {
-                'width': 300,
-                'elementHandlers': specialElementHandlers
-            });
-            doc.save('TDR.pdf');
-        });
 
 
 </script>
