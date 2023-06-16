@@ -1061,6 +1061,34 @@
     <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe>
     <div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><span style="margin: 0px auto; border: 2px dotted rgb(0, 0, 0); position: absolute; z-index: 2147483647; visibility: hidden; left: 1062px; width: 0px; top: 231px; height: 0px;"></span><span style="z-index: 2147483647; position: absolute; visibility: hidden; left: 1047px; width: 50px; top: 216px; height: 20px; font-size: 10px; color: black;"></span></body>
 
+
+
+
+    <script type="text/javascript">
+        var doc = new jsPDF();
+        var specialElementHandlers = {
+            '#editor': function(element, renderer) {
+                return true;
+            }
+        };
+
+        $('#generatePDF').click(function() {
+           
+            
+
+            var content = '<h1>Hello, World!</h1>' +
+                          
+            doc.fromHTML(content, 8, 8, {
+                'width': 300,
+                'elementHandlers': specialElementHandlers
+            });
+            doc.save('TDR.pdf');
+        });
+    </script>
+
+
+
+
 </html>
 
 
@@ -1073,4 +1101,40 @@
 
 
 
+    
+
+
+
 </script>
+
+
+<script type="text/javascript">
+    var doc = new jsPDF();
+    var specialElementHandlers = {
+        '#editor': function(element, renderer) {
+            return true;
+        }
+    };
+
+    $('#generatePDF').click(function() {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+        var TDR_area = $('#TDR_AREA').val();
+        
+
+        var content = '<h1>Hello, World!</h1>' +
+                      '<p>Name: ' + name + '</p>' +
+                      '<p>Email: ' + email + '</p>' +
+                      '<p>Message: ' + message + '</p>'
+                      '<p>TDR_AREA: ' + TDR_AREA + '</p>';;
+
+        doc.fromHTML(content, 8, 8, {
+            'width': 300,
+            'elementHandlers': specialElementHandlers
+        });
+        doc.save('TDR.pdf');
+    });
+</script>
+
+
