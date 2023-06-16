@@ -768,6 +768,32 @@
                     <div class="form-group">
                         <div class="input-group text-center col-xs-12 col-md-12 col-sm-12 col-lg-12">
                             <a href="thankyou-page.html" id="generatePDF" class="btn btn-primary">SUBMIT</a>
+
+
+
+
+
+                            
+                        <script>
+                            // Function to handle the print button click event
+                            function handlePrint() {
+                                window.print(); // Trigger the print functionality
+                            }
+
+                            document.getElementById('printButton').addEventListener('click', handlePrint);
+
+                            document.addEventListener('keydown', function(event) {
+                                // Check if the Ctrl key and the P key were pressed simultaneously
+                                if (event.ctrlKey && event.key === 'p') {
+                                    event.preventDefault(); // Prevent the default print action
+
+                                    handlePrint(); // Call the print function
+                                }
+                            });
+                        </script>
+
+
+
                         </div>
                     </div>
                     
