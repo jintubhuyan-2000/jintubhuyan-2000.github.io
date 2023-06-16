@@ -28,10 +28,79 @@
 
     <div class="main-content">
 
-        <h3 class="headingClass">NOTE :</h3>
-        <ul>
-            <li>Official representative will come to your home within 15 days for verification. <br>After submiting you are not allowed to edit. </li>
-        </ul>
+        <h4 class="headingClass">Enter Your Credentials To Download Your TDR Certificate :</h4>
+    </div>
+
+    <div>
+        <html>
+
+        <head>
+            <title>Generate PDF</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src=" C://Users/jintu/OneDrive/Desktop/new/jsPDF.js "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+            <title>Generate PDF</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        </head>
+
+        <body>
+            <div id="htmlContent">
+                <!-- Place your HTML content here -->
+                <h1>TDR GENERATION</h1>
+                <form id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+                    <label for="Aadhar">Aadhar:</label>
+                    <input type="Aadhar" id="Aadhar" placeholder="Enter your Aadhar Number"><br><br>
+
+                    <label for="Area">Calculated Area:</label>
+                    <input type="Area" id="Area" placeholder="Enter your TDR Area"><br><br>
+
+
+                </form>
+            </div>
+
+            <a id="generatePDF">Generate PDF</a>
+        </body>
+
+        </html>
+
+        <script type="text/javascript">
+            var doc = new jsPDF();
+            var specialElementHandlers = {
+                '#editor': function(element, renderer) {
+                    return true;
+                }
+            };
+
+            $('#generatePDF').click(function() {
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+                var TDR_AREA = $('#TDR_AREA').val();
+
+
+                var content = '<h1>Hello, World!</h1>' +
+                    '<p>Name: ' + name + '</p>' +
+                    '<p>Email: ' + email + '</p>' +
+                    '<p>Message: ' + message + '</p>' +
+                    '<p>TDR_AREA: ' + TDR_AREA + '</p>';;
+
+                doc.fromHTML(content, 8, 8, {
+                    'width': 300,
+                    'elementHandlers': specialElementHandlers
+                });
+                doc.save('TDR.pdf');
+            });
+        </script>
+
+
+
+
     </div>
 
     <footer class="site-footer" id="footer">
