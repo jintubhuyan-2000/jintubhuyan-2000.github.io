@@ -1,0 +1,1080 @@
+@ -1,1079 +0,0 @@
+<html>
+
+<head>
+    <base href="https://jintubhuyan-2000.github.io/">
+    <title>::TDR::</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Welcome </title>
+
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443//assets/css/new/dataTables.bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/css/new/fixedHeader.bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/css/new/responsive.bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/css/new/bootstrap-datepicker3.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/css/new/bootstrap-clockpicker.min.css" type="text/css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/css/commonStyle.css" type="text/css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/bootstrap/site_layout_css/site_font-awesome.min.css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/css/Treant.css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/css/editor.css" type="text/css">
+    <link rel="stylesheet" href="https://tdrdtcp.apcfss.in:443/assets/css/style.css" type="text/css">
+    <script src="https://tdrdtcp.apcfss.in:443/js/Treant.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/raphael.js"></script>
+
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/jspdf.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/jspdf.plugin.autotable.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://tdrdtcp.apcfss.in:443/js/md5/md5.js"></script>
+    <script type="text/javascript" src="https://tdrdtcp.apcfss.in:443/assets/js/new/bootstrap-datepicker.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/bootstrap.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/jquery.dataTables.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/dataTables.bootstrap.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/dataTables.fixedHeader.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/dataTables.responsive.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://tdrdtcp.apcfss.in:443/assets/js/new/moment.js"></script>
+
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/pdfmake.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/assets/js/new/vfs_fonts.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/xlsx.full.min.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/commonValidation.js?version=1"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/xmlToJson.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/aadharValidate.js"></script>
+    <script src="https://tdrdtcp.apcfss.in:443/js/biometric.js"></script>
+
+    <script src="https://tdrdtcp.apcfss.in:443/js/editor.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=" C://Users/jintu/OneDrive/Desktop/new/jsPDF.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <title>Generate PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+
+    <style>
+        h3.headingClass {
+            text-align: left;
+            border-left: 5px solid #e87e16;
+            padding: 0px 15px;
+            margin-bottom: : 30px;
+            display: block;
+        }
+        
+        .btn>.glyphicon,
+        .btn>.fa {
+            color: #ffffff !important;
+        }
+        
+        .form-control {
+            border-radius: 0px;
+        }
+        
+        .glyphicon,
+        .fa,
+        img {
+            color: #4a5ca9;
+            z-index: 99999;
+        }
+        
+        .well {
+            background: #f1f4fc;
+            border-radius: 0px;
+            border: 0px;
+        }
+    </style>
+    <style>
+        @media (min-width: 406px) and (max-width:456px) {
+            .clear-both {
+                clear: both;
+            }
+        }
+        
+        @media (min-width: 300px) and (max-width:405px) {
+            .clear-both {
+                clear: both;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        if (top != self) {
+            top.location.replace(location.href);
+        }
+    </script>
+    <style type="text/css">
+        .shadow-left-right {
+            background: #ffffff;
+            box-shadow: -50px 0px 100px -80px #000000, 50px 0px 100px -80px #000000;
+        }
+        
+        .pd0 {
+            padding: 0px;
+        }
+        
+        .btn {
+            border-radius: 0px;
+        }
+        
+        fieldset {
+            border: 1px solid #2b6794;
+            margin: 0;
+            xmin-width: 0;
+            padding: 10px;
+            position: relative;
+            background-color: white;
+            padding-left: 10px!important;
+            padding: 16px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+        
+        legend {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            width: 35%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px 5px 5px 10px;
+            background-color: #2b6794;
+            /* color: #3f7ba9; */
+            color: #ffffff;
+            text-align: -webkit-center;
+        }
+        
+        .border {
+            border: 0.5px solid #dddddd;
+            /*#006699 #1fbba6 #00cccc*/
+            /*  box-shadow: 2px 2px 2px gray; */
+        }
+        
+        .bg {
+            background: #12499ee3;
+            /*   #0c8ac1                 #00bfff #2a5ca8 #1fbba6 #0088cc*/
+        }
+        
+        .footer {
+            background-color: inear-gradient(to bottom, #0099ff -6%, #ffffff 100%);
+            /* #0c8ac1             #243f6b  */
+        }
+        
+        .table-bordered>thead>tr>td,
+        .table-bordered>thead>tr>th {
+            border-bottom-width: 0px !important;
+        }
+        
+        .table-bordered>thead>tr>th {
+            background: #12499ee3 !important;
+            color: #ffffff;
+        }
+        
+        .footerbarwrap {
+            background-color: linear-gradient(to bottom, #0099ff -6%, #ffffff 100%);
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="">
+        <div class="container pd0">
+            <div class="col-xs-12 col-md-12  col-sm-12 col-lg-12 pd0">
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="htmlContent" class="container shadow-left-right">
+
+            <div class="col-md-1">
+
+                <!-- <br/><button  class="btn btn-info   pull-left"
+                style="font-size: 14px;" onclick="window.history.back(-1)"><span class="fa fa-arrow-left" style="font-size:15px;"></span> <span
+                style="">&nbsp;Back</span></button> -->
+                <br>
+                <a href="index.html" class="btn btn-info   pull-left" style="font-size: 14px;">
+                    <span class="fa fa-arrow-left" style="font-size:15px;"></span> <span style="">&nbsp;Back</span> </a>
+            </div>
+
+            <br>
+            <form name="MasterFormBean" method="post" action="/UserRegistrationCreation.do" class="form-horizontal" enctype="multipart/form-data" id="formId">
+                <input type="hidden" name="mode" value="">
+                <input type="hidden" name="dyna(token)" value="571569">
+                <center>
+                    <h3><b> TDR REGISTRATION FORM </b></h3>
+                </center>
+                <div class=" pd0">
+
+
+
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" style="margin-top:20px;margin-bottom: 10px;">
+                        <fieldset class="col-xs-11 col-md-11 col-sm-11 col-lg-11">
+                            <legend><b>APPLICANT DETAILS</b> </legend>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <b><label for="inputEmail" id="firstNameLabel" class="col-xs-3 control-label">NAME: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block">
+                                            <input type="text" name="dyna(firstNameId)" value="" class="form-control" id="firstNameId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="fatherNameLabel" class="col-xs-5 control-label">S/o , D/o , W/o NAME: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(fatherNameId)" value="" class="form-control" id="fatherNameId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 clear-both">
+                                    <b><label for="inputEmail" id="dobLabel" class="col-xs-5 control-label">D.O.B  :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(dobId)" value="" class="form-control" id="dobId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="fatherNameLabel" class="col-xs-5 control-label">GENDER: </label></b>
+                                    <div class="col-xs-6">
+                                        <label class="radio-inline "> <input type="radio" name="dyna(genderId)" value="M" id="genderId_male">MALE  
+                                    </label> <label class="radio-inline"> <input type="radio" name="dyna(genderId)" value="F" id="genderId_female">FEMALE 
+                                    </label>
+                                        <label class="radio-inline " id="exterrorId" style="display:none"><span style="color:#B80000">   Required   </span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="mobileLabel" class="col-xs-5 control-label">MOBILE NO  :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(mobileId)" maxlength="10" value="" onkeyup="return ValidateMobile(this)" onchange="return checkMobileNumber(this)" class="form-control" id="mobileId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="emailLabel" class="col-xs-5 control-label">EMAIL ID: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="text" name="dyna(emailId)" value="" onchange="return checkRegEmail(this)" class="form-control" id="emailId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                                <span class="input-group-addon" style="border-left: none;">
+                                                <span class="glyphicon glyphicon-envelope"></span> </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="aadhaarNoLabel" class="col-xs-5 control-label"> AADHAAR NUMBER  :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="text" name="dyna(aadhaarNoId)" maxlength="12" value="" onkeyup="return intOnly(this)" onchange="checkAadharAsUserId(this)" onblur="return validateRegAadhaar(this)" class="form-control" id="aadhaarNoId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                                <span class="input-group-addon" style="border-left: none;">
+                                                <img style="height: 20px;width: 30px;z-index:1230;" src="https://tdrdtcp.apcfss.in:443/images/aadharImage.png"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="areaLabel" class="col-xs-5 control-label">AREA: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="text" name="dyna(areaId)" value="" onkeyup="return intOnly(this)" class="form-control" id="areaId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                                <span class="input-group-addon" style="border-left: none;">
+                                            <span class="glyphicon glyphicon-envelope"></span> </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="EstimatedAmountLabel" class="col-xs-5 control-label"> ESTIMATED AMOUNT  :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="text" name="dyna(EstimatedAmountId)" value="" onkeyup="return intOnly(this)" class="form-control" id="EstimatedAmountId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                                <span class="input-group-addon" style="border-left: none;">
+                                            <img style="height: 20px;width: 30px;z-index:1230;" src="https://tdrdtcp.apcfss.in:443/images/aadharImage.png"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="emailLabel" class="col-xs-5 control-label">USER PHOTO <br>( In Image Format ):</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="file" name="dyna(userPicId)" accept="image/*" value="" onchange="return fileUploadCheck(this,'image')" class="form-control" id="userPicId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="aadhaarNoLabel" class="col-xs-5 control-label"> AADHAAR COPY  :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <div class="input-group">
+                                                <input type="file" name="dyna(aadhaarDoc)" accept="image/*,.pdf" value="" onchange="return fileUploadCheck(this,'all')" class="form-control" id="aadhaarDocId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                                <span class="input-group-addon" style="border-left: none;">
+                                                <img style="height: 20px;width: 30px;z-index:1230;" src="https://tdrdtcp.apcfss.in:443/images/aadharImage.png"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <h3 class="headingClass">NOTE :</h3>
+                            <ul>
+                                <li>File Name Should Contains Only Alphabets, Numbers, Dot, Underscore ( Any Other Special Characters Not Allowed ) <br>( E.g: example_125.png/jpg/jpeg ) </li>
+                            </ul>
+
+                        </fieldset>
+                    </div>
+
+
+
+
+
+
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" style="margin-top:20px;margin-bottom: 10px;">
+                        <fieldset class="col-xs-11 col-md-11 col-sm-11 col-lg-11">
+                            <legend><b> ADDRESS OF THE APPLICANT </b></legend>
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="stateLabel" class="col-xs-5 control-label">STATE: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block">
+                                            <select name="dyna(stateId)" onchange="return chkState(this)" class="form-control" id="stateId" autocomplete="off"><option value="0">---Select  ---</option>
+                                        
+                                        <option value="2">Andhra Pradesh</option>
+<option value="3">Arunachal Pradesh</option>
+<option value="4">Assam</option>
+<option value="5">Bihar</option>
+<option value="6">Chhattisgarh</option>
+<option value="7">Goa</option>
+<option value="8">Gujarat</option>
+<option value="9">Haryana</option>
+<option value="10">Himachal Pradesh</option>
+<option value="11">Jammu and Kashmir</option>
+<option value="12">Jharkhand</option>
+<option value="13">Karnataka</option>
+<option value="14">Kerala</option>
+<option value="15">Madya Pradesh</option>
+<option value="16">Maharashtra</option>
+<option value="17">Manipur</option>
+<option value="18">Meghalaya</option>
+<option value="19">Mizoram</option>
+<option value="20">Nagaland</option>
+<option value="21">Orissa</option>
+<option value="22">Punjab</option>
+<option value="23">Rajasthan</option>
+<option value="24">Sikkim</option>
+<option value="25">Tamil Nadu</option>
+<option value="26">Telagana</option>
+<option value="27">Tripura</option>
+<option value="29">Uttar Pradesh</option>
+<option value="28">Uttaranchal,Uttarakhand</option>
+<option value="1">West Bengal</option></select>
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: none;" id="stateHide">
+
+                                <div class="form-group">
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="otherDistrictLabel" class="col-xs-5 control-label">DISTRICT: </label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <input type="text" name="dyna(otherDistrictId)" value="" class="form-control" id="otherDistrictId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="otherTownLabel" class="col-xs-5 control-label">TOWN  :</label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <input type="text" name="dyna(otherTownId)" value="" class="form-control" id="otherTownId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="otherVillageNameLabel" class="col-xs-5 control-label">VILLAGE/ WARD: </label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <input type="text" name="dyna(otherVillageNameId)" value="" class="form-control" id="otherVillageNameId" autocomplete="off">
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display: none;" id="stateShow">
+
+                                <div class="form-group">
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="tdrHolderdistrictLabel" class="col-xs-5 control-label">DISTRICT: </label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <select name="dyna(tdrHolderdistrictId)" onchange="getMandals()" class="form-control" id="tdrHolderdistrictId" autocomplete="off"><option value="">---Select  ---</option>
+                                                        
+                                                        <option value="26">Alluri Sitharama Raju</option>
+<option value="28">Anakapalli</option>
+<option value="43">Ananthapuramu</option>
+<option value="46">Annamayya</option>
+<option value="37">Bapatla</option>
+<option value="47">Chittoor</option>
+<option value="30">Dr.B.R. Ambedkar Konaseema</option>
+<option value="31">East Godavari</option>
+<option value="33">Eluru</option>
+<option value="36">Guntur</option>
+<option value="29">Kakinada</option>
+<option value="34">Krishna</option>
+<option value="41">Kurnool</option>
+<option value="42">Nandyal</option>
+<option value="35">NTR</option>
+<option value="38">Palnadu</option>
+<option value="25">Parvathipuram Manyam</option>
+<option value="39">Prakasam</option>
+<option value="40">Sri Potti Sriramulu Nellore</option>
+<option value="44">Sri Sathya Sai</option>
+<option value="23">Srikakulam</option>
+<option value="48">Tirupati</option>
+<option value="27">Visakhapatnam</option>
+<option value="24">Vizianagaram</option>
+<option value="32">West Godavari</option>
+<option value="45">Y.S.R</option></select>
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="townLabel" class="col-xs-5 control-label">TOWN  :</label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <select name="dyna(townId)" onchange="getVillages()" style="height:33px;" class="form-control" id="townId" autocomplete="off"></select>
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-6">
+                                        <b><label for="inputEmail" id="villageNameLabel" class="col-xs-5 control-label">VILLAGE/ WARD: </label></b>
+                                        <div class="col-xs-6">
+                                            <div class="required-field-block dynamic">
+                                                <select name="dyna(villageNameId)" class="form-control" id="villageNameId" autocomplete="off"></select>
+                                                <div class="required-icon">
+                                                    <div class="text">*</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="streetNameLabel" class="col-xs-5 control-label">STREET: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(streetNameId)" value="" class="form-control" id="streetNameId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="doorNoLabel" class="col-xs-5 control-label">DOOR NO   :</label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(doorNoId)" value="" class="form-control" id="doorNoId" autocomplete="off">
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="tdrPincodeLabel" class="col-xs-5 control-label">PINCODE: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <input type="text" name="dyna(tdrPincodeId)" maxlength="6" value="" onkeyup="return intOnly(this)" class="form-control" id="tdrPincodeId" autocomplete="off">
+                                            <!-- onchange="return validatePIN(this)"  -->
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12" style="margin-top: 10px">
+                        <fieldset class="col-xs-11 col-md-11 col-sm-11 col-lg-11">
+                            <legend><b>CITIZEN  AUTHENTICATE DETAILS</b> </legend>
+
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="corpTypeLabel" class="col-xs-5 control-label"> ULB / UDA: </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block">
+                                            <select name="dyna(corpTypeId)" onchange="return ulboruda(this)" class="form-control" id="corpTypeId" autocomplete="off"><option value="">---Select  ---</option>
+                                                    
+                                        <option value="1">Development Authority</option>
+<option value="2">Urban Local Body</option></select>
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 ">
+                                    <b><label for="inputEmail" id="districtLabel" class="col-xs-5 control-label"> ID Proof  : </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block">
+                                            <select name="dyna(districtId)" onchange="checkUlborUda()" class="form-control" id="districtId" autocomplete="off"><option value="">---Select  ---</option>
+                                        
+                                        <option value="26">Aadhar Card</option>
+<option value="28">Aadhar Card</option>
+<option value="43">PAN Card</option>
+<option value="46">Voter ID</option>
+<option value="37">Driving Lisence</option>
+<option value="47">Passport</option>
+<option value="30">Other</option>
+                                    <div class="required-icon">
+                                        <div class="text">*</div>
+                                    </div>	
+                                       </div>
+                            </div>
+                        </div>
+                </div>
+           <div class="form-group" style="display: none;" id="ulbShow">
+                        <div class="col-sm-6">
+                            <b><label for="inputEmail" id="ulbLabel" class="col-xs-5 control-label"> ULB  NAME: </label></b>
+                            <div class="col-xs-6">
+                             <div class="required-field-block dynamic">
+                                    <select name="dyna(ulbId)" class="form-control" id="ulbId" autocomplete="off"></select>
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="display: none;" id="danShow">
+                                <div class="col-sm-6">
+                                    <b><label for="inputEmail" id="danLabel" class="col-xs-5 control-label"> DEVELOPMENT AUTHORITY NAME   : </label></b>
+                                    <div class="col-xs-6">
+                                        <div class="required-field-block dynamic">
+                                            <select name="dyna(danId)" class="form-control" id="danId" autocomplete="off"></select>
+                                            <div class="required-icon">
+                                                <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="form-group">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAyCAIAAABUA0cyAAADHUlEQVR42u2aW3bDIAxEs93+dRPdYlfQfaRpc9raoMdIAgenw8mXY2PgMjCSuVxYnr5cP96jv7fXl+tvuV0xiv3voLJrj3JllVIckMjjP4CLA0rABEzABEzABHx2wHGvk7FEBPwwpd6vTFAwAa+0OBMwARPwUMDwlkbApwV8jPoJmIAJeG3AB4RAEwFPC+PqYd9CgEcr+FjAayiYgP8rYK2FXr9uNze/KuA11jkqeFr2Sux1VMHfd9478tcdWMEEfFrAiyp4UAKdgFdVcNFcHAI4FzTOAyzYgiGAhWM9gwDvKhwBWG5qAXA6N6ABVk9KYUHpV0eKJqsxkMbpLdlnYoCjnXQB2wfNEoADow8D9g/EeVX1YVLv+bWf8A7txVZrAMB9tRXAtzobkD3yCuC8spXlarcE7sWdAJxfop2ZpYH0AOdkgQDuPQh+WrSvX2xnrPEbwMJghvbgqYBjIDHAA03Wtp2tyYSRIIDDU1MCnDRZGGCjhY6C1QkYBLzTE7Y4W4C/xbetU/QgiIibB5tHksvAsYDt7bwF7HuBMuABJmu/t/3avebmRP1hl2uPvgkY8Ufabb2X1FywBdiWYA4w8q4oYJfWioCDq73RTru/KuDccuc49W5+aZMOmddO2BYH3IzabMCVMEl8djsmGOCQgsHYQ6lWM1OIgrUBSgOOeqsi4NwevBZgzUVXAIv9OStgICHVpJWSgP+WJsmn5b8LKXHwKMBaTiYUJiXyMC5goVoNsKfgwYDDLvoRgF371m9dWv2V/AYIWAwU04D75qGAnYxxFrAYIDVxTgIwkum1w8R8dhYDXJINBtjopv41aVNFIGNlfxWR2uR7Zg+waiz3ZltL9NS/LCGAHeWUFYwmOqopSQ+wNkCxrwISYPdLamACTQOstUprqnsd0cnzAh53omMk4FSGXxsiJFNEwNXyGMBYAuo4wKFcVS5Dm1iBzw0YEPFRgMfqDFbwMYWA/x3gxEoTXo0wEAQ8s/3jFHzFDnUQ8LqAEbdBwNOKeQp/AOCosgl4PGD9jQT8DIDDCXMC5h5MwARMwAQMAmZ54vIJT9VQfaY6xz0AAAAASUVORK5CYII="
+                            width="15%" height="50px" style="margin-left: 490px;margin-top: 10px;">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-1">
+                            <b><label for="inputEmail" id="captcha1Label" class="col-xs-5 control-label">CAPTCHA: </label></b>
+                            <div class="col-xs-4">
+                                <div class="required-field-block dynamic">
+                                    <input type="text" name="dyna(captcha)" maxlength="6" value="" class="form-control" id="captcha1Id" autocomplete="off">
+                                    <div class="required-icon">
+                                        <div class="text">*</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                
+                    <div class="form-group">
+                        <div class="input-group text-center col-xs-12 col-md-12  col-sm-12 col-lg-12">
+                            <button href="thankyou-page.html" id="generatePDF" button type="button" class="btn btn-primary">SUBMIT</button>
+                        </div>
+                    </div>  
+
+                    <div class="form-group">
+                        <div class="input-group text-center col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                            <a href="thankyou-page.html" id="generatePDF" class="btn btn-primary">SUBMIT</a>
+
+
+
+
+
+                            
+                        <script>
+                            // Function to handle the print button click event
+                            function handlePrint() {
+                                window.print(); // Trigger the print functionality
+                            }
+
+                            document.getElementById('printButton').addEventListener('click', handlePrint);
+
+                            document.addEventListener('keydown', function(event) {
+                                // Check if the Ctrl key and the P key were pressed simultaneously
+                                if (event.ctrlKey && event.key === 'p') {
+                                    event.preventDefault(); // Prevent the default print action
+
+                                    handlePrint(); // Call the print function
+                                }
+                            });
+                        </script>
+
+
+
+                        </div>
+                    </div>
+                    
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h3 class="headingClass">NOTE :</h3>
+                    <ul>
+                        <li>Official representative will come to your home within 15 days for verification. <br>After submiting you are not allowed to edit. </li>
+                    </ul>
+
+                    </fieldset>
+                </div>
+
+
+
+        </div>
+        </form>
+    </div>
+
+
+    </div>
+    <div class="container pd0">
+        <div class="col-xs-12 col-md-12  col-sm-12 col-lg-12" align="right" style="background-color: #2856b2fa">
+            <p class="right" style="color: white;margin-top: 10px;">
+                <b>Designed &amp; Developed by </b>
+                <a target="_blank" style="color: #ff5722"> IIRS STUDENTS </a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function getdata() {
+            var errors = 0;
+            if (!$('#genderId_male').is(":checked") && !$('#genderId_female').is(":checked")) {
+                errors++;
+                $('#exterrorId').show();
+            } else {
+                $('#exterrorId').hide();
+            }
+            validateFormOnIdbased("formId", function(value) {
+                if (value == 0 && errors == 0) {
+                    var res = confirm("Are You Sure You Want To Register!");
+                    if (res == true) {
+                        document.forms[0].mode.value = "save";
+                        document.forms[0].submit();
+                    } else {
+                        return res;
+                    }
+                }
+            });
+            return false;
+        }
+
+        function ulboruda(obj) {
+            $('#districtId,#mandalId,#danId,#ulbId').val("");
+            if (obj.value == "1") {
+                $('#ulbShow').hide();
+                $('#danShow').show();
+                $('#danShow').find('.dynamic').addClass('required-field-block');
+                $('#ulbShow').find('.dynamic').removeClass('required-field-block');
+            } else if (obj.value == "2") {
+                $('#danShow').hide();
+                $('#ulbShow').show();
+                $('#ulbShow').find('.dynamic').addClass('required-field-block');
+                $('#danShow').find('.dynamic').removeClass('required-field-block');
+            } else if (obj.value == "0") {
+                $('#danShow').hide();
+                $('#danShow').find('.dynamic').removeClass('required-field-block');
+                $('#ulbShow').hide();
+                $('#ulbShow').find('.dynamic').removeClass('required-field-block');
+                ss
+            }
+        }
+
+        function checkUlborUda() {
+            var corpId = $('#corpTypeId').val();
+            var distId = $('#districtId').val();
+            if (corpId == '1') {
+                var danId = 'danId';
+                $.ajax({
+                    type: "POST",
+                    url: "loadResource.do?mode=udas",
+                    data: {
+                        distId: distId
+                    },
+                    success: function(data, status) {
+                        loadAjaxPostData(data, danId, 'dan', 'id', 'name');
+                    }
+                });
+            } else if (corpId == '2') {
+                distId = $('#districtId').val();
+                ulbId = 'ulbId';
+                $.ajax({
+                    type: "POST",
+                    url: "loadResource.do?mode=ulbs",
+                    data: {
+                        distId: distId
+                    },
+                    success: function(data, status) {
+                        loadAjaxPostData(data, ulbId, 'ulb', 'id', 'name');
+                    }
+                });
+            }
+        }
+
+        function Validate(obj) {
+            var val = obj.value;
+
+            if (!val.match(/^[a-zA-Z.@]*$/)) {
+                alert('Please enter valid characters');
+                obj.value = "";
+                return false;
+            }
+            return true;
+        }
+
+        function ValidateMobile(obj) {
+            var val = obj.value;
+            var pattern = /^[0-9]*$/;
+            if (!val.match(pattern)) {
+                val = val.match(pattern);
+                obj.value = val;
+                $('#mobileId').val(val);
+                return false;
+            } else {
+                if (val.length == 1) {
+                    var mob = ["6", "7", "8", "9"]; // array list
+                    var n = mob.includes(val);
+                    if (n == true) {
+                        return true;
+                    } else {
+                        document.getElementById("mobileId").value = "";
+                        //alert("Mobile Number Starts with 9/8/7/6");
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+
+
+        function getMandals() {
+            var distId = $('#tdrHolderdistrictId').val();
+            var mandalId = 'townId';
+            $.ajax({
+                type: "POST",
+                url: "loadResource.do?mode=mandals",
+                data: {
+                    distId: distId
+                },
+                success: function(data, status) {
+                    loadAjaxPostData(data, mandalId, 'mandal', 'id', 'name');
+                }
+            });
+        }
+
+        function getVillages() {
+            var distId = $('#tdrHolderdistrictId').val();
+            var mandalId = $('#townId').val();
+            var villageId = 'villageNameId';
+            $.ajax({
+                type: "POST",
+                url: "loadResource.do?mode=villages",
+                data: {
+                    distId: distId,
+                    mandalId: mandalId
+                },
+                success: function(data, status) {
+                    loadAjaxPostData(data, villageId, 'village', 'id', 'name');
+                }
+            });
+        }
+
+        function checkAadharAsUserId(obj) {
+            var aadharNo = $(obj).val();
+            if (aadharNo != null && aadharNo.trim() != 'null' && aadharNo.trim() != '') {
+                $.ajax({
+                    type: "POST",
+                    url: "loadResource.do?&mode=checkAadhaarNoAsUserId",
+                    data: {
+                        aadharNo: aadharNo
+                    },
+                    success: function(msg) {
+                        var mytoolMsg = $.trim(msg);
+                        if (mytoolMsg != "" && mytoolMsg != null && mytoolMsg != 'null') {
+                            alert("Already Registered With This AADHAR NO :" + aadharNo);
+                            $(obj).val('');
+                        }
+                    }
+                });
+
+            }
+
+        }
+
+        function validatePIN(pin) {
+            $(pin).closest('.form-group').find('.required-field-block').next('span').remove();
+            // $(mbl).next('span').remove();	
+            if (pin.value.charAt(0) != '5') {
+                $(pin).closest('.form-group').find('.pincode').after("<span style='color:#B80000'>Pincode should start with 5</span>");
+                pin.focus();
+                pin.value = "";
+            } else if (pin.value.length != 6) {
+                $(pin).closest('.form-group').find('.pincode').after("<span style='color:#B80000'>Pincode should have 6 digits</span>");
+                pin.focus();
+            }
+        }
+
+
+        function chkState(obj) {
+            if (obj.value == "2") {
+                $('#stateShow').show();
+                $('#stateHide').hide();
+                $('#stateShow').find('.dynamic').addClass('required-field-block');
+                $('#stateHide').find('.dynamic').removeClass('required-field-block');
+            } else if (obj.value == "0") {
+                $('#stateShow').hide();
+                $('#stateHide').hide();
+            } else {
+                $('#stateHide').show();
+                $('#stateShow').hide();
+                $('#stateHide').find('.dynamic').addClass('required-field-block');
+                $('#stateShow').find('.dynamic').removeClass('required-field-block');
+            }
+
+        }
+        $(document).ready(function() {
+            $('#dobId').datepicker({
+                format: 'dd/mm/yyyy',
+                todayHighlight: true,
+                autoclose: true,
+
+                endDate: '31/12/2004',
+                startView: 2,
+                minViewMode: 0,
+            });
+
+        });
+    </script>
+    <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe>
+    <div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><span style="margin: 0px auto; border: 2px dotted rgb(0, 0, 0); position: absolute; z-index: 2147483647; visibility: hidden; left: 1062px; width: 0px; top: 231px; height: 0px;"></span><span style="z-index: 2147483647; position: absolute; visibility: hidden; left: 1047px; width: 50px; top: 216px; height: 20px; font-size: 10px; color: black;"></span></body>
+
+</html>
+
+
+
+<script type="text/JavaScript">
+
+
+    var doc = new jsPDF(); var doc = new jsPDF(); var specialElementHandlers = { '#editor': function(element, renderer) { return true; } }; $('#generatePDF').click(function() { doc.fromHTML($('#htmlContent').html(), 7, 7, { 'width': 300, 'elementHandlers':
+    specialElementHandlers}); doc.save('TDR.pdf'); });
+
+
+
+</script>
