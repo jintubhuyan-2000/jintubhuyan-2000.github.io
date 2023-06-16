@@ -31,84 +31,124 @@
         <h4 class="headingClass">Enter Your Credentials To Download Your TDR Certificate :</h4>
     </div>
 
-    <div>
-        <html>
+    <!DOCTYPE html>
+    <html>
 
-        <head>
-            <title>Generate PDF</title>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src=" C://Users/jintu/OneDrive/Desktop/new/jsPDF.js "></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
-            <title>Generate PDF</title>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-        </head>
+    <head>
 
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            .certificate {
+                width: 1000px;
+                margin: 0 auto;
+                border: 2px solid #000;
+                padding: 20px;
+            }
+            
+            h1 {
+                text-align: center;
+                margin-top: 0;
+            }
+            
+            .details {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .details label {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            
+            .details input[type="text"] {
+                width: 200px;
+            }
+            
+            .button-container {
+                text-align: center;
+            }
+            
+            .button {
+                display: inline-block;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
 
+    <body>
+        <div class="certificate">
+            <h1>TDR Certificate</h1>
+            <form id="certificateForm">
+                <div class="details">
+                    <label for="nameInput">Name: </label>
+                    <input type="text" id="nameInput" required>
+                    <label for="aadharInput">Aadhar ID: </label>
+                    <input type="text" id="aadharInput" required>
+                    <label for="buildingIdInput">Building ID: </label>
+                    <input type="text" id="buildingIdInput" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="button">Generate Certificate</button>
+                </div>
+            </form>
+        </div>
 
-        <body>
-            <div id="htmlContent">
-                <!-- Place your HTML content here -->
-                <h1>TDR GENERATION</h1>
-                <form id="form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+        <script>
+            const form = document.getElementById('certificateForm');
+            const nameInput = document.getElementById('nameInput');
+            const aadharInput = document.getElementById('aadharInput');
+            const buildingIdInput = document.getElementById('buildingIdInput');
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email"><br><br>
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = nameInput.value;
+                const aadhar = aadharInput.value;
+                const buildingId = buildingIdInput.value;
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Enter your message"></textarea><br><br>
+                const certificateContent = `
+                <div class="certificate">
+                    <h1>TDR Certificate</h1>
+                    <div class="details">
+                        <p style="text-align: right;"><strong>Name:</strong> ${name}</p>
+                        <p style="text-align: right;"><strong>Aadhar ID:</strong> ${aadhar}</p>
+                        <p style="text-align: right;"><strong>Building ID:</strong> ${buildingId}</p>
+                    </div>
+                    <p>It has been certified that for <strong>${name}</strong> of <strong>${aadhar}</strong>, Transferable Development Right (TDR) has been generated successfully for the building ID <strong>${buildingId}</strong>.</p>
+                </div>
+            `;
 
-                    <label for="TDR_AREA">TDR_AREA:</label>
-                    <textarea id="TDR_AREA" placeholder="Enter your message"></textarea><br><br>
-                </form>
-            </div>
+                const opt = {
+                    margin: 10,
+                    filename: 'TDR_Certificate.pdf',
+                    image: {
+                        type: 'jpeg',
+                        quality: 0.98
+                    },
+                    html2canvas: {
+                        scale: 2
+                    },
+                    jsPDF: {
+                        unit: 'mm',
+                        format: 'a4',
+                        orientation: 'portrait'
+                    }
+                };
 
-            <a id="generatePDF">Generate PDF</a>
-        </body>
-
-        </html>
-
-        <script type="text/javascript">
-            var doc = new jsPDF();
-            var specialElementHandlers = {
-                '#editor': function(element, renderer) {
-                    return true;
-                }
-            };
-
-            $('#generatePDF').click(function() {
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var message = $('#message').val();
-                var TDR_AREA = $('#TDR_AREA').val();
-
-
-                var content = '<h1>Hello, World!</h1>' +
-                    '<p>Name: ' + name + '</p>' +
-                    '<p>Email: ' + email + '</p>' +
-                    '<p>Message: ' + message + '</p>' +
-                    '<p>TDR_AREA: ' + TDR_AREA + '</p>';;
-
-                doc.fromHTML(content, 8, 8, {
-                    'width': 300,
-                    'elementHandlers': specialElementHandlers
-                });
-                doc.save('TDR.pdf');
+                html2pdf().set(opt).from(certificateContent).save();
             });
         </script>
+    </body>
 
-
-
-
-    </div>
-
-    <footer class="site-footer" id="footer">
-        <p class="site-footer__fineprint" id="fineprint">Copyright ©2014 | All Rights Reserved</p>
-    </footer>
-</body>
-
-</html>
+    </html>
